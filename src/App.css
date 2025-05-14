@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 16px;
 }
 
 .App-logo {
@@ -32,7 +33,76 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+.filter-container {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 16px 0px;
+
+  .filter-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+
+  .task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    button {
+      height: 24px;
+      width: 24px;
+    }
+
+    /* input {
+      height: 24px;
+      width: 24px;
+    } */
+
+    p {
+      margin: 0px;
+      font-size: 30px;
+    }
+  }
+}
+
+.task-input {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  input {
+    border-radius: 5px;
+  }
+
+  .task-button {
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    color: whhite;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .task-button:hover {
+    background: blue;
+    color: white;
+
   }
 }
